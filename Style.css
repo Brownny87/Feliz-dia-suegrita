@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: 0;
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    align-items: center;
+    background-color: #e84545;
+    display: flex;
+    height: 100vh;
+}
+
+.marquee {
+    padding: 0% 0% 50px;
+    color: #d1c2c2;
+    font: normal 25px 'Great Vibes', cursive;
+    text-shadow: 1px 1px 5px #000000;
+}
+
+.contenedor {
+    margin: 0 auto;
+    max-width: 90%;
+    width: 225px;
+}
+
+.corazon {
+    animation: burbuja 1.5s ease-in-out infinite;
+    border-radius: 50%;
+    color: #f05050;
+    font-size: 7.5em;
+    height: 225px;
+    line-height: 225px;
+    position: relative;
+    text-align: center;
+    text-shadow: 1px 1px 10px #750000;
+    width: 225px;
+}
+
+.corazon:after {
+    animation: corazon 1.5s ease-in-out infinite;
+    color: #c7c7c7;
+    content: 'Feliz Dia Suegrita @TiktokerNichell!!';
+    font: normal 0.2em 'Great Vibes', cursive;
+    left: calc(15px - 0.3em);
+    line-height: 225px;
+    position: absolute;
+    text-shadow: 1px 1px 5px #000000;
+    top: 0;
+    width: 100%;
+
+}
+
+@keyframes burbuja {
+    50% {
+        box-shadow: 1px 1px 50px rgba(255, 255, 255, 0.3) inset;
+    }
+}
+
+@keyframes corazon {
+    50% {
+        transform: scale(1.1);
+    }
+}
